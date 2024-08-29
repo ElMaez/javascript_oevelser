@@ -23,6 +23,18 @@
     </main>
     <script>
       console.log("Hello øvelse 2");
+      let timer = new Date().getHours();
+      console.log(timer);
+
+      if (timer >= 5 && timer < 10) {
+        console.log("Godmorgen");
+      } else if (timer >= 10 && timer < 18) {
+        console.log("Goddag");
+      } else if (timer >= 18 && timer < 24) {
+        console.log("Godaften");
+      } else {
+        console.log("Godnat");
+      }
     </script>
   </body>
 </html>
