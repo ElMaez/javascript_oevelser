@@ -6,3 +6,20 @@
 body {
   border: dashed 1px red;
 }
+
+.images_1 {
+  width: 10rem;
+  height: 10rem;
+}
+.images_1:hover {
+  transform: translate(0, -10px);
+}
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+h2 {
+  text-align: center;
+  padding: 2rem;
+}
