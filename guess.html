@@ -32,20 +32,18 @@
       </section>
     </main>
     <script>
-      const tal = 3;
-      let tries = 0;
-
       const button = document.querySelector("button");
       button.addEventListener("click", go);
 
-      function go() {
-        console.log(guess, "gættet");
-        tries++;
-        const guess = document.querySelector("#guess").value;
+      let tries = 0;
+      const tal = 3;
 
-        if (tal < guess) {
+      function go() {
+        tries++;
+        const Brugertal = document.querySelector("#guess").value;
+        if (tal < Brugertal) {
           alert("dit tal er for højt" + " " + "forsøg:" + " " + tries);
-        } else if (tal > guess) {
+        } else if (tal > Brugertal) {
           alert("dit tal er for lavt" + " " + "forsøg:" + " " + tries);
         } else {
           alert("korrekt!" + " " + "forsøg:" + " " + tries);
