@@ -7,53 +7,64 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="layout.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
+      <h1>Semester 2</h1>
       <nav>
-        <ul>
-          <li><a href="./index.html">1</a></li>
-          <li><a href="./two.html">2</a></li>
-          <li><a href="./three.html">3</a></li>
-        </ul>
+        <div>
+          Tema 7
+          <ul>
+            <li>
+              <a target="blank" href="./assets/documents/_1.pdf">Dokument 1</a>
+            </li>
+            <li>
+              <a class="hover-underline-animation" href="./alkoholfri.html"
+                >Alkoholfri</a
+              >
+            </li>
+            <li>
+              <a class="hover-underline-animation" href="./hilsen.html"
+                >Hilsen</a
+              >
+            </li>
+            <li>
+              <a class="hover-underline-animation" href="./guess.html">Guess</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a target="_blank" href="./assets/documents/_2.pdf">Dokument 2</a>
+            </li>
+            <li>
+              <a class="hover-underline-animation" href="./2_3.html"
+                >Klon template fra array</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a target="_blank" href="">Json Fetch opgave</a>
+            </li>
+            <li>
+              <a
+                class="hover-underline-animation"
+                href="./jsonfetchopgave/jsonfetchopgave.html"
+                >Json fetch</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>Tema 8</div>
       </nav>
     </header>
-    <main>
-      <section>
-        <h2>Array Introduktion: fra undervisning Sem 2 Tema 7</h2>
-        <ul></ul>
-
-        <article>info kommer her</article>
-        <div></div>
-        <h2>Øvelse 1</h2>
-        <div class="container">
-          <img id="cola" class="images_1" src="./img/cola.jpg" alt="cola" />
-          <img id="øl" class="images_1" src="./img/Oel.png" alt="øl" />
-          <img id="faxe" class="images_1" src="./img/faxe.png" alt="faxe" />
-          <img id="snaps" class="images_1" src="./img/snaps.webp" alt="snaps" />
-        </div>
-      </section>
-    </main>
-    <script>
-      const snaps = document.querySelector("#snaps");
-      const oel = document.querySelector("#øl");
-      const cola = document.querySelector("#cola");
-      const faxe = document.querySelector("#faxe");
-      const output1 = document.querySelector("#output1");
-
-      function start() {
-        snaps.addEventListener("click", drink);
-        oel.addEventListener("click", drink);
-        cola.addEventListener("click", drink);
-        faxe.addEventListener("click", drink);
-      }
-      function drink() {
-        if (this.alt == "øl" || this.alt == "snaps") {
-          console.log("indeholder alkohol");
-        } else {
-          console.log("alkoholfri");
-        }
-      }
-    </script>
+    <main></main>
   </body>
 </html>

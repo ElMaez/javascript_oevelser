@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/layout.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a class="hover-underline-animation" href="./index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Øvelse 2_3</h1>
+        <template
+          ><article>
+            <h2>brand</h2>
+            <h3>model</h3>
+            <p id="motor">motor</p>
+            <p id="passagerer">passagerer</p>
+          </article>
+        </template>
+      </section>
+    </main>
+    <script>
+      const biler = [
+        {
+          brand: "Peugot",
+          model: "5008",
+          motor: "bensin",
+          passagerer: ["Jonas", "Martin", "Louise", "Peter", "Alan"],
+        },
+        {
+          brand: "Tesla",
+          model: "5",
+          motor: "el",
+          passagerer: ["Elon", "Jeff", "MArc"],
+        },
+        {
+          brand: "BMW",
+          model: "M340i",
+          motor: "diesel",
+          passagerer: ["Jytte", "Hans", "Asta", "Storm"],
+        },
+      ];
+
+      const temp = document.querySelector("template").content;
+
+      biler.forEach(visBil);
+
+      function visBil(bil) {
+        const klon = temp.cloneNode(true);
+        klon.querySelector("h2").textContent = bil.brand;
+        klon.querySelector("h3").textContent = bil.model;
+        klon.querySelector("#motor").textContent = bil.motor;
+        klon.querySelector("#passagerer").textContent = bil.passagerer;
+
+        const beholder = document.querySelector("body");
+        beholder.appendChild(klon);
+      }
+    </script>
+  </body>
+</html>

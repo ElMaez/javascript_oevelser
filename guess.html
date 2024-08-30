@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/layout.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a class="hover-underline-animation" href="./index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <input type="number" id="guess" />
+        <button>Go</button>
+      </section>
+    </main>
+    <script>
+      const tal = 3;
+      let tries = 0;
+
+      const button = document.querySelector("button");
+      button.addEventListener("click", go);
+
+      function go() {
+        console.log(guess, "gættet");
+        tries++;
+        const guess = document.querySelector("#guess").value;
+
+        if (tal < guess) {
+          alert("dit tal er for højt" + " " + "forsøg:" + " " + tries);
+        } else if (tal > guess) {
+          alert("dit tal er for lavt" + " " + "forsøg:" + " " + tries);
+        } else {
+          alert("korrekt!" + " " + "forsøg:" + " " + tries);
+          location.reload();
+        }
+      }
+    </script>
+  </body>
+</html>
