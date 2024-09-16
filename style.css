@@ -136,3 +136,6 @@ button {
   border: solid 2px black;
   border-radius: 255px 35px 225px 45px /25px 255px 35px 255px;
 }
+#submit:hover {
+  background-color: rgba(121, 121, 121, 0.658);
+}
