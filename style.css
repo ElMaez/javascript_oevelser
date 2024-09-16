@@ -100,6 +100,9 @@ nav ul li a:hover {
 #forms section {
   margin-top: 2rem;
 }
+#forms section p {
+  margin-bottom: 0.5rem;
+}
 form {
   margin: auto;
   width: 500px;
