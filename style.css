@@ -95,3 +95,37 @@ nav ul li a:hover {
 #jsonfetch h2 {
   margin-bottom: 2rem;
 }
+
+/* Forms øvelse */
+#forms section {
+  margin-top: 2rem;
+}
+form {
+  margin: auto;
+  width: 500px;
+  height: 100px;
+}
+input {
+  width: 200px;
+  height: 30px;
+
+  background: transparent;
+  padding: 0.5rem 0.5rem;
+  margin: 0 0.5rem;
+
+  border: solid 2px black;
+  border-radius: 255px 35px 225px 45px /25px 255px 35px 255px;
+}
+input:focus {
+  border: solid 2px blue;
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  padding: 0.5rem 0.5rem;
+  margin: 2rem 0.5rem;
+
+  border: solid 2px black;
+  border-radius: 255px 35px 225px 45px /25px 255px 35px 255px;
+}
