@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
-  const login = document.querySelector("button");
+  const login = document.querySelector("#Login");
   login.addEventListener("click", info);
 }
 

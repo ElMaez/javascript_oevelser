@@ -32,13 +32,32 @@
           <p>Sådan Logger du ind</p>
           <section>
             <p>Indtast Email Her:</p>
-            <input type="text" required placeholder="ex. blahblahblah@dut.dk" />
+            <input
+              type="email"
+              required
+              name="email"
+              placeholder="ex. blahblahblah@dut.dk"
+            />
           </section>
           <section>
             <p>Indtast Password:</p>
-            <input type="text" required placeholder="********" />
+            <input
+              type="password"
+              required
+              name="password"
+              placeholder="********"
+            />
           </section>
-          <button>Login</button>
+          <button id="Login">Login</button>
+        </form>
+        <form action="">
+          <p>Kan du lide kage?</p>
+          <select name="kage" id="kage">
+            <p>Kan du lide kage?</p>
+            <option value="">Ja</option>
+            <option value="">Nej</option>
+            <option value="">Måske</option>
+          </select>
         </form>
       </section>
     </main>

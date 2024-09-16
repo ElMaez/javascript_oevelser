@@ -99,6 +99,9 @@ nav ul li a:hover {
 /* Forms øvelse */
 #forms section {
   margin-top: 2rem;
+
+  display: flex;
+  flex-direction: row;
 }
 #forms section p {
   margin-bottom: 0.5rem;
@@ -106,7 +109,8 @@ nav ul li a:hover {
 form {
   margin: auto;
   width: 500px;
-  height: 100px;
+  height: 500px;
+  outline: dashed 2px black;
 }
 input {
   width: 200px;
